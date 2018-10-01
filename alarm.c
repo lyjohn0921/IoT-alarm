@@ -13,7 +13,7 @@ int main(int argc, char const *argv[])
             printf("Waiting for reset\n");        
             while(digitalRead(0) == 1){
                 digitalWrite (1, HIGH) ;
-		ifttt("http://red.eecs.yorku.ca:8080/trigger/event/with/key/123", "my1", "my 2", "my 33333");
+		ifttt("http://red.eecs.yorku.ca:8080/trigger/event/with/key/123", "Hello", "World", "my 3333311111");
 		}
             printf("Waiting for event\n");
             while(digitalRead(0) == 0){
